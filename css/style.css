@@ -1,4 +1,157 @@
-body {
-    background-color: rgb(0, 101, 196);
-    color: red;
+* {
+
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 0; 
+    min-height: 0; 
+    
+    }
+body 
+{
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: hsl(225, 100%, 94%);
+}
+.full-card
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-basis: auto;
+    align-items: center;
+    align-content: stretch;
+    max-width: 20%;
+    max-height: 30%;
+    border-radius: 25px;
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    min-width: 300px;
+    min-height: 375px;
+}
+.full-card img 
+{
+    padding-bottom: 5%;
+    align-self: stretch;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+    flex-basis: auto;
+
+}
+.card-header-text 
+{
+ font-family: 'Red Hat Display', 'Courier New', Courier, monospace;
+ font-weight: 900;
+ flex-basis: auto;
+}
+
+.card-body-text 
+{
+    padding: 0 10% 5% 10%;
+    align-self: baseline;
+    font-family: 'Red Hat Display', 'Courier New', Courier, monospace;
+    font-weight: 500;
+    flex-basis: auto;
+}
+.plan-selector 
+{
+    display: flex;
+    width: 90%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 0 5% 0 5%;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    background-color:hsl(225, 100%, 98%);
+    padding: 2% 5% 2% 5%;
+    flex-basis: auto;
+}
+.plan-selector img 
+{
+    align-self: center;
+    min-height: fit-content;
+    margin-top: 5%;
+}
+.plan-selector p
+{
+    font-family: 'Red Hat Display', 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-left: 5%;
+    flex-basis: auto;
+    display: inline;
+    white-space: nowrap;
+    
+}
+.plan-selector span
+{
+    margin: 0;
+    flex-basis: auto;
+    font-weight: 500;
+}
+.plan-selector a
+{
+    font-family: 'Red Hat Display', 'Courier New', Courier, monospace;
+    font-weight: 00;
+    padding-left: 30%;
+    flex-basis: auto;
+    
+}
+.plan-selector a:hover
+{
+    text-decoration: none;
+    color: hsl(245, 52%, 56%);
+}
+.payment-submit 
+{
+    margin: 10%;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 4%;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Red Hat Display', 'Courier New', Courier, monospace;
+    font-weight: 900;
+    box-shadow:  0 5px 10px hsl(224, 23%, 55%);
+    transition: 0.3s;
+    flex-basis: auto;
+}
+.payment-submit:hover
+{
+    background-color: hsl(245, 52%, 56%);
+
+}
+.cancel-order-button
+{
+    text-decoration: none;
+    font-family: 'Red Hat Display', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:  hsl(224, 23%, 55%);
+    flex-basis: auto;
+    margin: auto;
+    padding-bottom: 5%;
+
+}
+.cancel-order-button:hover
+{
+    color: hsl(223, 47%, 23%);
+    
+}
+
+@media screen and (max-width: 400px) 
+{
+
+    .full-card
+    {
+        min-width: 90%;
+
+    }    
 }
